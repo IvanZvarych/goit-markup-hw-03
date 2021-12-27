@@ -1,0 +1,367 @@
+:root {
+  --accent-color: #2196f3;
+  --main-color: #212121;
+  --main-color2: #757575;
+  --bg-color: #f5f4fa;
+  --bg-color2: #2f303a;
+  --bg-card-color: #ffffff;
+  --color-logo: #000000;
+  --footer-color: #ffffff;
+  --footer-color2: #ffffff99;
+  --btn-text-color: #ffffff;
+  --btn-text-color2: #212121;
+  --btn-background-color: #f5f4fa;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-color);
+}
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ----- ----------------- HEADER ----------*/
+.link {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+.link:hover,
+.link:active,
+.link:focus {
+  color: var(--accent-color);
+}
+.current {
+  color: var(--accent-color);
+}
+.logo {
+  font-family: Raleway;
+  color: var(--color-logo);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.w-logo {
+  color: var(--accent-color);
+}
+.header {
+  border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  margin: 0 0 0 93px;
+}
+.header-list > :first-child {
+  margin-right: 50px;
+}
+.header-list > :last-child {
+  margin-left: 50px;
+}
+.header-contakt {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+  margin-left: auto;
+}
+.header-contakt > :last-child {
+  margin-left: 50px;
+}
+.he-contakt {
+  color: var(--main-color2);
+}
+/* ------------------------  FOOTER ----------*/
+.footer {
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+  background-color: var(--bg-color2);
+}
+
+.f-logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--footer-color);
+}
+.addr {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-color);
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+.contakt {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-color2);
+  padding-top: 9px;
+}
+/* ++++++++++++++++++++++   INDEX   ++++++++++*/
+/* ----------------------    MAIN   ----------*/
+.list {
+  list-style: none;
+}
+/* -----------------------    HERO  --------- */
+.header-1 {
+  color: var(--footer-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  width: 691px;
+  margin: 0 auto;
+}
+.hero-container {
+  background-color: var(--bg-color2);
+  width: 1200px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--btn-text-color);
+  width: 200px;
+  height: 50px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: transparent;
+  border-radius: 4px;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.section {
+  display: block;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: 0 auto;
+}
+/* --------------------   SKILLS   ----------*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.skills-container {
+  display: flex;
+  padding-bottom: 94px;
+}
+.skills-container > :not(:last-child) {
+  margin-right: 30px;
+}
+.list-header-3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.list-text {
+  width: 270px;
+  color: var(--main-color2);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  padding-top: 10px;
+}
+
+/* -----------------   WORKS   --------------- */
+
+.works-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.works-container > :not(:last-child) {
+  margin-right: 30px;
+}
+.header-2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* ----------------  COMMAND  ----------- */
+.command {
+  width: 1200px;
+  background: var(--bg-color);
+}
+.workers {
+  display: flex;
+  width: 1170px;
+  padding-top: 50px;
+}
+.workers > :not(:last-child) {
+  margin-right: 30px;
+}
+.workers > :nth-child(n + 1) {
+  background-color: var(--bg-card-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.command-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 30px;
+}
+.command-profession {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+/* +++++++++++++++++++++++++++   PORTFOLIO   ++++++++++ */
+
+/* ---------------------------   BUTTONS     ---------- */
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+}
+.button-container > :not(:last-child) {
+  margin-left: 8px;
+}
+.btn {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--btn-text-color2);
+  background-color: var(--btn-background-color);
+  border: transparent;
+  padding: 6px 22px;
+}
+.btn:hover,
+.btn:active,
+.btn:focus {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--btn-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+/* -------------------    GRID   -------------- */
+.caption {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+  padding-top: 20px;
+  padding-bottom: 4px;
+  margin-left: 24px;
+}
+.comment {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--main-color2);
+  padding-bottom: 20px;
+  margin-left: 24px;
+}
+.card-set {
+  display: flex;
+  justify-content: left;
+  padding-top: 50px;
+  padding-bottom: 94px;
+  flex-wrap: wrap;
+}
+.card-set > .card {
+  background: #ffffff;
+  box-sizing: border-box;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-right: 30px;
+}
+.card-set > :nth-child(3n) {
+  margin-right: 0;
+}
+.card-set > :nth-child(-n + 3) {
+  margin-top: 0;
+}
+.card {
+  display: block;
+  box-sizing: border-box;
+  outline: 1px solid #eeeeee;
+}
+.image {
+  display: block;
+}
