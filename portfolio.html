@@ -4,11 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title lang="en">Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css"
-    />
+    <meta name="description" content="Эффективные решения для вашего бизнеса" />
+    <title lang="en">WebStudio</title>
+    <link rel="stylesheet" href="./CSS/modern-normalize.css" />
     <link rel="stylesheet" href="./CSS/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,9 +16,9 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header>
       <div class="container">
-        <div class="header-container">
+        <div class="header">
           <nav class="header-nav">
             <a class="link logo" href="" lang="en"><span class="w-logo">Web</span>Studio</a>
             <ul class="list header-list">
@@ -39,9 +37,9 @@
 
     <main>
       <section>
-        <div class="container">
-          <!-- h1 HIDE!! -->
-          <h1 class="visually-hidden">Наше портфолио</h1>
+        <!-- h1 HIDE!! -->
+        <h1 class="visually-hidden">Наше портфолио</h1>
+        <div class="container portfolio">
           <ul class="list button-container">
             <li><button class="btn" type="button">Все</button></li>
             <li><button class="btn" type="button">Веб-сайты</button></li>
@@ -52,8 +50,10 @@
           <ul class="list card-set">
             <li class="card">
               <img class="image" src="./images/portfolio1.jpg" alt="Отркытый ноутбук" width="370" />
-              <h2 class="caption">Технокряк</h2>
-              <p class="comment">Веб-сайт</p>
+              <div class="label-card">
+                <h2 class="caption">Технокряк</h2>
+                <p class="comment">Веб-сайт</p>
+              </div>
             </li>
             <li class="card">
               <img
@@ -62,8 +62,10 @@
                 alt="Два баскетболиста с мячом"
                 width="370"
               />
-              <h2 class="caption">Постер New Orlean vs Golden Star</h2>
-              <p class="comment">Дизайн</p>
+              <div class="label-card">
+                <h2 class="caption">Постер New Orlean vs Golden Star</h2>
+                <p class="comment">Дизайн</p>
+              </div>
             </li>
             <li class="card">
               <img
@@ -72,33 +74,45 @@
                 alt="Логотип ресторана"
                 width="370"
               />
-              <h2 class="caption">Ресторан Seafood</h2>
-              <p class="comment">Приложение</p>
+              <div class="label-card">
+                <h2 class="caption">Ресторан Seafood</h2>
+                <p class="comment">Приложение</p>
+              </div>
             </li>
             <li class="card">
               <img class="image" src="./images/portfolio4.jpg" alt="Наушники" width="370" />
-              <h2 class="caption">Проект Prime</h2>
-              <p class="comment">Маркетинг</p>
+              <div class="label-card">
+                <h2 class="caption">Проект Prime</h2>
+                <p class="comment">Маркетинг</p>
+              </div>
             </li>
             <li class="card">
               <img class="image" src="./images/portfolio5.jpg" alt="Две коробки" width="370" />
-              <h2 class="caption">Проект Boxes</h2>
-              <p class="comment">Приложение</p>
+              <div class="label-card">
+                <h2 class="caption">Проект Boxes</h2>
+                <p class="comment">Приложение</p>
+              </div>
             </li>
             <li class="card">
               <img class="image" src="./images/portfolio6.jpg" alt="Монитор" width="370" />
-              <h2 class="caption">Inspiration has no Borders</h2>
-              <p class="comment">Веб-сайт</p>
+              <div class="label-card">
+                <h2 class="caption">Inspiration has no Borders</h2>
+                <p class="comment">Веб-сайт</p>
+              </div>
             </li>
             <li class="card">
               <img class="image" src="./images/portfolio7.jpg" alt="Открытый журнал" width="370" />
-              <h2 class="caption">Издание Limited Edition</h2>
-              <p class="comment">Дизайн</p>
+              <div class="label-card">
+                <h2 class="caption">Издание Limited Edition</h2>
+                <p class="comment">Дизайн</p>
+              </div>
             </li>
             <li class="card">
               <img class="image" src="./images/portfolio8.jpg" alt="Ярлык с надписью" width="370" />
-              <h2 class="caption">Проект LAB</h2>
-              <p class="comment">Маркетинг</p>
+              <div class="label-card">
+                <h2 class="caption">Проект LAB</h2>
+                <p class="comment">Маркетинг</p>
+              </div>
             </li>
             <li class="card">
               <img
@@ -107,8 +121,10 @@
                 alt="Руки на клавиатуре ноутбука"
                 width="370"
               />
-              <h2 class="caption">Growing Business</h2>
-              <p class="comment">Приложение</p>
+              <div class="label-card">
+                <h2 class="caption">Growing Business</h2>
+                <p class="comment">Приложение</p>
+              </div>
             </li>
           </ul>
         </div>

@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Эффективные решения для вашего бизнеса" />
     <title lang="en">WebStudio</title>
-    <link
-      rel="stylesheet"
-      href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css"
-    />
+    <link rel="stylesheet" href="./CSS/modern-normalize.css" />
     <link rel="stylesheet" href="./CSS/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,9 +16,9 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header>
       <div class="container">
-        <div class="header-container">
+        <div class="header header-container">
           <nav class="header-nav">
             <a class="link logo" href="" lang="en"><span class="w-logo">Web</span>Studio</a>
             <ul class="list header-list">
@@ -38,8 +36,8 @@
     </header>
 
     <main>
-      <section class="hero-container">
-        <div class="container">
+      <section class="">
+        <div class="hero container">
           <h1 class="header-1">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
           <button class="hero-btn" type="button">Заказать услугу</button>
         </div>
@@ -75,6 +73,8 @@
             </li>
           </ul>
         </div>
+      </section>
+      <section>
         <div class="container">
           <h2 class="header-2">Чем мы занимаемся</h2>
           <ul class="list works-container">
@@ -90,31 +90,39 @@
           <ul class="list workers">
             <li>
               <img src="./images/worker1.jpg" alt="Photo of worker1" width="270" />
-              <h3 class="command-name">Игорь Демьяненко</h3>
-              <p class="command-profession">Product Designer</p>
+              <div class="label-worker">
+                <h3 class="command-name">Игорь Демьяненко</h3>
+                <p class="command-profession">Product Designer</p>
+              </div>
             </li>
             <li>
               <img src="./images/worker2.jpg" alt="Photo of worker2" width="270" />
-              <h3 class="command-name">Ольга Репина</h3>
-              <p class="command-profession">Frontend Developer</p>
+              <div class="label-worker">
+                <h3 class="command-name">Ольга Репина</h3>
+                <p class="command-profession">Frontend Developer</p>
+              </div>
             </li>
             <li>
               <img src="./images/worker3.jpg" alt="Photo of worker3" width="270" />
-              <h3 class="command-name">Николай Тарасов</h3>
-              <p class="command-profession">Marketing</p>
+              <div class="label-worker">
+                <h3 class="command-name">Николай Тарасов</h3>
+                <p class="command-profession">Marketing</p>
+              </div>
             </li>
             <li>
               <img src="./images/worker4.jpg" alt="Photo of worker4" width="270" />
-              <h3 class="command-name">Михаил Ермаков</h3>
-              <p class="command-profession">UI Designer</p>
+              <div class="label-worker">
+                <h3 class="command-name">Михаил Ермаков</h3>
+                <p class="command-profession">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container">
+    <footer>
+      <div class="footer container">
         <a class="link f-logo" href="" lang="en"><span class="w-logo">Web</span>Studio</a>
         <address class="addr">г. Киев, пр-т Леси Украинки, 26</address>
         <ul class="list">

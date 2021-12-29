@@ -12,9 +12,6 @@
   --btn-text-color2: #212121;
   --btn-background-color: #f5f4fa;
 }
-* {
-  box-sizing: border-box;
-}
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-color);
@@ -67,12 +64,9 @@ ul {
   border-bottom: 1px solid #ececec;
   padding-top: 24px;
   padding-bottom: 24px;
-  align-items: center;
-}
-.header-container {
   display: flex;
-  align-items: center;
 }
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -104,7 +98,8 @@ ul {
   display: block;
   width: 1200px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--bg-color2);
 }
 
@@ -125,8 +120,7 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-color);
-  padding-top: 20px;
-  padding-bottom: 0;
+  margin-top: 20px;
 }
 .contakt {
   font-weight: 400;
@@ -134,7 +128,7 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-color2);
-  padding-top: 9px;
+  margin-top: 9px;
 }
 /* ++++++++++++++++++++++   INDEX   ++++++++++*/
 /* ----------------------    MAIN   ----------*/
@@ -153,11 +147,8 @@ ul {
   width: 691px;
   margin: 0 auto;
 }
-.hero-container {
+.hero {
   background-color: var(--bg-color2);
-  width: 1200px;
-  margin: 0 auto;
-  display: block;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -202,7 +193,6 @@ ul {
 }
 .skills-container {
   display: flex;
-  padding-bottom: 94px;
 }
 .skills-container > :not(:last-child) {
   margin-right: 30px;
@@ -247,8 +237,7 @@ ul {
 }
 .workers {
   display: flex;
-  width: 1170px;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 .workers > :not(:last-child) {
   margin-right: 30px;
@@ -259,30 +248,36 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.label-worker {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .command-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 30px;
+  color: var(--main-color);
 }
 .command-profession {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 10px;
-  padding-bottom: 30px;
+  margin-top: 10px;
+  color: var(--main-color2);
 }
 
 /* +++++++++++++++++++++++++++   PORTFOLIO   ++++++++++ */
 
 /* ---------------------------   BUTTONS     ---------- */
+.portfolio {
+  padding-top: 94px;
+}
 .button-container {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
 }
 .button-container > :not(:last-child) {
   margin-left: 8px;
@@ -320,6 +315,11 @@ ul {
 }
 
 /* -------------------    GRID   -------------- */
+.label-card {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
 .caption {
   font-style: normal;
   font-weight: 700;
@@ -327,9 +327,7 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
-  padding-top: 20px;
-  padding-bottom: 4px;
-  margin-left: 24px;
+  margin-bottom: 4px;
 }
 .comment {
   font-weight: normal;
@@ -337,8 +335,6 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-color2);
-  padding-bottom: 20px;
-  margin-left: 24px;
 }
 .card-set {
   display: flex;
@@ -360,11 +356,7 @@ ul {
 .card-set > :nth-child(-n + 3) {
   margin-top: 0;
 }
-.card {
-  display: block;
-  box-sizing: border-box;
-  outline: 1px solid #eeeeee;
-}
+
 .image {
   display: block;
 }
