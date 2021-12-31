@@ -30,8 +30,25 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
 }
-
-/* ----- ----------------- HEADER ----------*/
+.section {
+  display: block;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .link {
   text-decoration: none;
   color: var(--main-color);
@@ -46,6 +63,11 @@ ul {
 .link:focus {
   color: var(--accent-color);
 }
+.list {
+  list-style: none;
+}
+
+/* ----- ----------------- HEADER ----------*/
 .current {
   color: var(--accent-color);
 }
@@ -64,9 +86,12 @@ ul {
   border-bottom: 1px solid #ececec;
   padding-top: 24px;
   padding-bottom: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header-container {
   display: flex;
 }
-
 .header-nav {
   display: flex;
   align-items: center;
@@ -128,14 +153,20 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-color2);
+}
+.footer-contakt {
   margin-top: 9px;
 }
 /* ++++++++++++++++++++++   INDEX   ++++++++++*/
-/* ----------------------    MAIN   ----------*/
-.list {
-  list-style: none;
+
+/* ---------------------    HERO  ------------*/
+.hero {
+  background-color: var(--bg-color2);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  /* max-width: 1200px; */
 }
-/* -----------------------    HERO  --------- */
 .header-1 {
   color: var(--footer-color);
   font-weight: 900;
@@ -146,12 +177,6 @@ ul {
   text-transform: uppercase;
   width: 691px;
   margin: 0 auto;
-}
-.hero {
-  background-color: var(--bg-color2);
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 .hero-btn {
   font-family: inherit;
@@ -172,25 +197,7 @@ ul {
   padding: 0;
 }
 
-.section {
-  display: block;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin: 0 auto;
-}
 /* --------------------   SKILLS   ----------*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 .skills-container {
   display: flex;
 }
@@ -210,7 +217,7 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 /* -----------------   WORKS   --------------- */
@@ -218,7 +225,7 @@ ul {
 .works-container {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 .works-container > :not(:last-child) {
   margin-right: 30px;
@@ -232,7 +239,7 @@ ul {
 }
 /* ----------------  COMMAND  ----------- */
 .command {
-  width: 1200px;
+  /* width: 1200px; */
   background: var(--bg-color);
 }
 .workers {
@@ -339,7 +346,7 @@ ul {
 .card-set {
   display: flex;
   justify-content: left;
-  padding-top: 50px;
+  margin-top: 50px;
   padding-bottom: 94px;
   flex-wrap: wrap;
 }

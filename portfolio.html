@@ -16,30 +16,28 @@
     />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="header">
-          <nav class="header-nav">
-            <a class="link logo" href="" lang="en"><span class="w-logo">Web</span>Studio</a>
-            <ul class="list header-list">
-              <li><a class="link" href="./">Студия</a></li>
-              <li><a class="link current" href="./portfolio.html">Портфолио</a></li>
-              <li><a class="link" href="">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="header-contakt">
-            <a class="link he-contakt" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="link he-contakt" href="tel:+380961111111">+38 096 111 11 11</a>
-          </div>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a class="link logo" href="" lang="en"><span class="w-logo">Web</span>Studio</a>
+          <ul class="list header-list">
+            <li><a class="link" href="./">Студия</a></li>
+            <li><a class="link current" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header-contakt">
+          <a class="link he-contakt" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="link he-contakt" href="tel:+380961111111">+38 096 111 11 11</a>
         </div>
       </div>
     </header>
 
     <main>
-      <section>
+      <section class="portfolio">
         <!-- h1 HIDE!! -->
         <h1 class="visually-hidden">Наше портфолио</h1>
-        <div class="container portfolio">
+        <div class="container">
           <ul class="list button-container">
             <li><button class="btn" type="button">Все</button></li>
             <li><button class="btn" type="button">Веб-сайты</button></li>
@@ -130,13 +128,18 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container">
         <a class="link f-logo" href="" lang="en"><span class="w-logo">Web</span>Studio</a>
         <address class="addr">г. Киев, пр-т Леси Украинки, 26</address>
         <ul class="list">
-          <li><a class="link contakt" href="mailto:info@example.com">info@example.com</a></li>
-          <li><a class="link contakt" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="footer-contakt">
+            <a class="link contakt" href="mailto:info@example.com">info@example.com</a>
+          </li>
+          <li class="footer-contakt">
+            <a class="link contakt" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
       </div>
     </footer>
