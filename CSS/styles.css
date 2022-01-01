@@ -31,11 +31,11 @@ ul {
   padding-right: 15px;
 }
 .section {
-  display: block;
+  /* display: block; */
   padding-top: 94px;
   padding-bottom: 94px;
-  margin: 0 auto;
-  max-width: 1200px;
+  /* margin: 0 auto; */
+  /* max-width: 1200px; */
 }
 .visually-hidden {
   position: absolute;
@@ -86,8 +86,8 @@ ul {
   border-bottom: 1px solid #ececec;
   padding-top: 24px;
   padding-bottom: 24px;
-  max-width: 1200px;
-  margin: 0 auto;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
 }
 .header-container {
   display: flex;
@@ -120,9 +120,9 @@ ul {
 }
 /* ------------------------  FOOTER ----------*/
 .footer {
-  display: block;
-  width: 1200px;
-  margin: 0 auto;
+  /* display: block; */
+  /* width: 1200px; */
+  /* margin: 0 auto; */
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--bg-color2);
